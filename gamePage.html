@@ -6,9 +6,19 @@
     <link rel="stylesheet" href="src/style.css">
     <title>Hunger Feast</title>
 </head>
-<body>
-    <canvas id="canvas"></canvas>
-    
+<body id="gameBackground">
+    <canvas id="underwater">
+    </canvas>
+    <div id="gameSummary">
+        <div id="summaryFlexBox">
+            <h1>TIME IS UP!</h1> <br>
+            <p id="gameScore"></p>
+            <p id="highScore"></p><br>
+            <input type=button value='PLAY NOW' onclick="location.href='gamePage.html';">
+            <input type="button" value="END GAME" onclick="open(location, '_self').close();"/>
+
+        </div>
+    </div>
 </body>
 <script src="src/app.js"></script>
 </html>
